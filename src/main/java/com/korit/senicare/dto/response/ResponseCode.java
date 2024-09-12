@@ -11,7 +11,9 @@ public interface ResponseCode {
     String DUPLICATE_TEL_NUMBER = "DT";
 
     String TEL_AUTH_FAIL = "TAF";
+    String SIGN_IN_FAIL = "SF";
 
     String DATABASE_ERROR = "DBE";
     String MESSAGE_SEND_FAIL = "TF";
+    String TOKEN_CREATE_FAIL = "TCF";
 }
