@@ -9,6 +9,7 @@ public interface ResponseMessage {
     String VALIDATION_FAIL = "Validation Failed";
     String DUPLICATE_TEL_NUMBER = "Duplicated User Tel Number";
     String NO_EXIST_USER_ID = "No Exist User Id";
+    String NO_EXIST_TOOL = "No Exist Tool";
 
     String TEL_AUTH_FAIL = "Telnumber Authentication Failed";
     String SIGN_IN_FAIL = "Sign in Failed";

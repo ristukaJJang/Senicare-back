@@ -34,6 +34,11 @@ public class ResponseDto {
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(responsdBody);
     }
 
+    public static ResponseEntity<ResponseDto> noExistTool() {
+        ResponseDto responsdBody = new ResponseDto(ResponseCode.NO_EXIST_TOOL, ResponseMessage.NO_EXIST_TOOL);
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(responsdBody);
+    }
+
     public static ResponseEntity<ResponseDto> validationFail() {
         ResponseDto responseBody = new ResponseDto(ResponseCode.VALIDATION_FAIL, ResponseMessage.VALIDATION_FAIL);
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(responseBody);
