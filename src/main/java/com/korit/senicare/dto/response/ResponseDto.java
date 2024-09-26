@@ -39,6 +39,11 @@ public class ResponseDto {
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(responsdBody);
     }
 
+    public static ResponseEntity<ResponseDto> noExistCustomer() {
+        ResponseDto responsdBody = new ResponseDto(ResponseCode.NO_EXIST_CUSTOMER, ResponseMessage.NO_EXIST_CUSTOMER);
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(responsdBody);
+    }
+
     public static ResponseEntity<ResponseDto> validationFail() {
         ResponseDto responseBody = new ResponseDto(ResponseCode.VALIDATION_FAIL, ResponseMessage.VALIDATION_FAIL);
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(responseBody);
@@ -49,9 +54,19 @@ public class ResponseDto {
         return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(responsdBody);
     }
 
+    public static ResponseEntity<ResponseDto> toolInsufficient() {
+        ResponseDto responseBody = new ResponseDto(ResponseCode.TOOL_INSUFFICIENT, ResponseMessage.TOOL_INSUFFICIENT);
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(responseBody);
+    }
+
     public static ResponseEntity<ResponseDto> signInFail() {
         ResponseDto responsdBody = new ResponseDto(ResponseCode.SIGN_IN_FAIL, ResponseMessage.SIGN_IN_FAIL);
         return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(responsdBody);
+    }
+
+    public static ResponseEntity<ResponseDto> noPermission() {
+        ResponseDto responsdBody = new ResponseDto(ResponseCode.NO_PERMISSION, ResponseMessage.NO_PERMISSION);
+        return ResponseEntity.status(HttpStatus.FORBIDDEN).body(responsdBody);
     }
 
     public static ResponseEntity<ResponseDto> databaseError() {

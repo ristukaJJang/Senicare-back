@@ -40,4 +40,8 @@ public class ToolEntity {
         this.purpose = dto.getPurpose();
         this.count = dto.getCount();
     }
+
+    public void decreaseCount(Integer usedCount) {
+        this.count -= usedCount;
+    }
 }

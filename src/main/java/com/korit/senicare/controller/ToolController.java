@@ -15,7 +15,6 @@ import com.korit.senicare.dto.request.tool.PostToolRequestDto;
 import com.korit.senicare.dto.response.ResponseDto;
 import com.korit.senicare.dto.response.tool.GetToolListResponseDto;
 import com.korit.senicare.dto.response.tool.GetToolResponseDto;
-import com.korit.senicare.entity.ToolEntity;
 import com.korit.senicare.service.ToolService;
 
 import jakarta.validation.Valid;
